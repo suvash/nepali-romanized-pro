@@ -1,7 +1,7 @@
 <?XML version="1.1" encoding="UTF-8"?>
 <!DOCTYPE keyboard PUBLIC "" "file://localhost/System/Library/DTDs/KeyboardLayout.dtd">
 <!--Created by Ukelele version 2.2.1 on 2012-07-30 at 20:39 (GMT+02:00)-->
-<!--Last edited by Ukelele version 2.2.1 on 2012-07-31 at 00:38 (GMT+02:00)-->
+<!--Last edited by Ukelele version 2.2.1 on 2012-07-31 at 23:28 (GMT+02:00)-->
 <!--﻿Author : Suvash ThapaliyaBased on the Nepali Romanized Keyboard layout by MPP-->
 <keyboard group="126" id="-11464" name="Nepali Romanized Pro" maxout="3">
     <layouts>
@@ -83,6 +83,7 @@
             <key code="46" output="म"/>
             <key code="47" output="।"/>
             <key code="48" output="&#x0009;"/>
+            <key code="49" output=" "/>
             <key code="50" output="़"/>
             <key code="51" output="&#x0008;"/>
             <key code="53" output="&#x001B;"/>
@@ -171,6 +172,7 @@
             <key code="46" output="ं"/>
             <key code="47" output="."/>
             <key code="48" output="&#x0009;"/>
+            <key code="49" output=" "/>
             <key code="50" output="ऽ"/>
             <key code="51" output="&#x0008;"/>
             <key code="53" output="&#x001B;"/>
@@ -224,6 +226,7 @@
             <key code="38" output="ज्ञ"/>
             <key code="40" output="क्ष"/>
             <key code="48" output="&#x0009;"/>
+            <key code="49" output=" "/>
             <key code="51" output="&#x0008;"/>
             <key code="53" output="&#x001B;"/>
             <key code="64" output="&#x0010;"/>
