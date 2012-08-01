@@ -27,5 +27,18 @@ On the menubar, select the keyboard layout you want to use.
 
 ### That's it. You're all set to using Nepali on your machine.
 
+## Keyboard Layouts
 
-Suggestions are always welcome. Feel free to send me one by [opening an issue here](https://github.com/suvash/nepali-romanized-pro/issues).
+### Normal
+![Normal](https://github.com/suvash/nepali-romanized-pro/raw/master/images/readme/normal.png)
+
+### Shift Pressed
+![Shift Pressed](https://github.com/suvash/nepali-romanized-pro/raw/master/images/readme/shift-pressed.png)
+
+### Option/Alt Pressed
+![Option Pressed](https://github.com/suvash/nepali-romanized-pro/raw/master/images/readme/option-pressed.png)
+
+
+##Suggestions are always welcome.
+
+Feel free to send me one by [opening an issue here](https://github.com/suvash/nepali-romanized-pro/issues) or in [the Facebook Page](https://www.facebook.com/pages/Nepali-Romanized-Pro-for-OSX/424938580892062)
