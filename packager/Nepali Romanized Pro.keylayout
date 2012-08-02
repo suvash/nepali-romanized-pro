@@ -1,7 +1,7 @@
 <?XML version="1.1" encoding="UTF-8"?>
 <!DOCTYPE keyboard PUBLIC "" "file://localhost/System/Library/DTDs/KeyboardLayout.dtd">
 <!--Created by Ukelele version 2.2.1 on 2012-07-30 at 20:39 (GMT+02:00)-->
-<!--Last edited by Ukelele version 2.2.1 on 2012-07-31 at 23:28 (GMT+02:00)-->
+<!--Last edited by Ukelele version 2.2.1 on 2012-08-02 at 22:54 (GMT+02:00)-->
 <!--﻿Author : Suvash ThapaliyaBased on the Nepali Romanized Keyboard layout by MPP-->
 <keyboard group="126" id="-11464" name="Nepali Romanized Pro" maxout="3">
     <layouts>
@@ -157,7 +157,7 @@
             <key code="31" output="ओ"/>
             <key code="32" output="ू"/>
             <key code="33" output="ई"/>
-            <key code="34" output=" ी"/>
+            <key code="34" output="ी"/>
             <key code="35" output="फ"/>
             <key code="36" output="&#x000D;"/>
             <key code="37" output="॥"/>
