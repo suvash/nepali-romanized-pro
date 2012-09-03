@@ -8,7 +8,7 @@ This keyboard layout is based on the Nepali Unicode Romanized layout by Madan Pu
 
 ## Installation
 
-Download the [latest version here](https://github.com/downloads/suvash/nepali-romanized-pro/Nepali-Romanized-Pro_1.1.zip), unzip it and run the installer. Sadly enough, you have to restart in order to use the Keyboard Layout.
+Download the [latest version here](https://github.com/downloads/suvash/nepali-romanized-pro/Nepali-Romanized-Pro_1.3.zip), unzip it and run the installer. Sadly enough, you have to restart in order to use the Keyboard Layout.
 ![Installer](https://github.com/suvash/nepali-romanized-pro/raw/master/images/readme/installer.png)
 
 
