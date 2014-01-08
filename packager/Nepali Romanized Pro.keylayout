@@ -155,7 +155,7 @@ Based on the Nepali Romanized Keyboard layout by MPP-->
             <key code="6" output="ऋ"/>
             <key code="7" output="ढ"/>
             <key code="8" output="छ"/>
-            <key code="9" output=" ँ"/>
+            <key code="9" output="ँ"/>
             <key code="11" output="भ"/>
             <key code="12" output="ठ"/>
             <key code="13" output="औ"/>
@@ -191,7 +191,7 @@ Based on the Nepali Romanized Keyboard layout by MPP-->
             <key code="43" output="ङ"/>
             <key code="44" output="?"/>
             <key code="45" output="ण"/>
-            <key code="46" output=" ं"/>
+            <key code="46" output="ं"/>
             <key code="47" output="॥"/>
             <key code="48" output="&#x0009;"/>
             <key code="49" output=" "/>
