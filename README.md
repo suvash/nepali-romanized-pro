@@ -8,7 +8,7 @@ This keyboard layout is based on the Nepali Unicode Romanized layout by Madan Pu
 
 ## Installation
 
-Download the [latest version here](http://sourceforge.net/projects/nepaliromanizedpro-osx/files/Nepali-Romanized-Pro-2.0-20140107.mpkg.zip/download), unzip it and run the installer. You have to log out before being able to use the Keyboard Layout.
+Download the [latest version here](https://sourceforge.net/projects/nepaliromanizedpro-osx/files/latest/download), unzip it and run the installer. You have to log out before being able to use the Keyboard Layout.
 ![Installer](https://github.com/suvash/nepali-romanized-pro/raw/master/images/readme/installer.png)
 
 
