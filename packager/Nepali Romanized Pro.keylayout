@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE keyboard PUBLIC "" "file://localhost/System/Library/DTDs/KeyboardLayout.dtd">
 <!--Created by Ukelele version 2.2.6 on 2014-01-07 at 19:20 (GMT+1)-->
-<!--Last edited by Ukelele version 2.2.6 on 2014-01-07 at 23:59 (GMT+1)-->
+<!--Last edited by Ukelele version 2.2.7 on 2014-01-23 at 19:34 (GMT+1)-->
 <!--﻿Author: Suvash Thapaliya
 Based on the Nepali Romanized Keyboard layout by MPP-->
 <keyboard group="126" id="-11464" name="Nepali Romanized Pro" maxout="3">
@@ -159,7 +159,7 @@ Based on the Nepali Romanized Keyboard layout by MPP-->
             <key code="11" output="भ"/>
             <key code="12" output="ठ"/>
             <key code="13" output="औ"/>
-            <key code="14" output=" ै"/>
+            <key code="14" output="ै"/>
             <key code="15" output=" ृ"/>
             <key code="16" output="ञ"/>
             <key code="17" output="थ"/>
