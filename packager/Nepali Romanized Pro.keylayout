@@ -2,6 +2,7 @@
 <!DOCTYPE keyboard PUBLIC "" "file://localhost/System/Library/DTDs/KeyboardLayout.dtd">
 <!--Created by Ukelele version 2.2.6 on 2014-01-07 at 19:20 (GMT+1)-->
 <!--Last edited by Ukelele version 2.2.7 on 2014-01-23 at 19:34 (GMT+1)-->
+<!--Last edited by Jwalanta Shrestha on 2014-08-04-->
 <!--﻿Author: Suvash Thapaliya
 Based on the Nepali Romanized Keyboard layout by MPP-->
 <keyboard group="126" id="-11464" name="Nepali Romanized Pro" maxout="3">
@@ -92,7 +93,7 @@ Based on the Nepali Romanized Keyboard layout by MPP-->
             <key code="65" output="."/>
             <key code="66" output="&#x001D;"/>
             <key code="67" output="*"/>
-            <key code="69" output="+"/>
+            <key code="69" output="&#x200C;"/>
             <key code="70" output="&#x001C;"/>
             <key code="71" output="&#x001B;"/>
             <key code="72" output="&#x001F;"/>
@@ -102,7 +103,7 @@ Based on the Nepali Romanized Keyboard layout by MPP-->
             <key code="78" output="-"/>
             <key code="79" output="&#x0010;"/>
             <key code="80" output="&#x0010;"/>
-            <key code="81" output="="/>
+            <key code="81" output="&#x200D;"/>
             <key code="82" output="0"/>
             <key code="83" output="1"/>
             <key code="84" output="2"/>
@@ -203,7 +204,7 @@ Based on the Nepali Romanized Keyboard layout by MPP-->
             <key code="65" output="."/>
             <key code="66" output="&#x001D;"/>
             <key code="67" output="*"/>
-            <key code="69" output="+"/>
+            <key code="69" output="&#x200C;"/>
             <key code="70" output="&#x001C;"/>
             <key code="71" output="&#x001B;"/>
             <key code="72" output="&#x001F;"/>
@@ -213,7 +214,7 @@ Based on the Nepali Romanized Keyboard layout by MPP-->
             <key code="78" output="-"/>
             <key code="79" output="&#x0010;"/>
             <key code="80" output="&#x0010;"/>
-            <key code="81" output="="/>
+            <key code="81" output="&#x200D;"/>
             <key code="82" output="0"/>
             <key code="83" output="1"/>
             <key code="84" output="2"/>
@@ -306,7 +307,7 @@ Based on the Nepali Romanized Keyboard layout by MPP-->
             <key code="47" output="॰"/>
             <key code="48" output="&#x0009;"/>
             <key code="49" output=" "/>
-            <key code="50" output="ऽ"/>
+            <key code="50" output="ऱ्"/>
             <key code="51" output="&#x0008;"/>
             <key code="52" output="&#x0003;"/>
             <key code="53" output="&#x001B;"/>
@@ -314,7 +315,7 @@ Based on the Nepali Romanized Keyboard layout by MPP-->
             <key code="65" output="."/>
             <key code="66" output="&#x001D;"/>
             <key code="67" output="*"/>
-            <key code="69" output="+"/>
+            <key code="69" output="&#x200C;"/>
             <key code="70" output="&#x001C;"/>
             <key code="71" output="&#x001B;"/>
             <key code="72" output="&#x001F;"/>
@@ -324,7 +325,7 @@ Based on the Nepali Romanized Keyboard layout by MPP-->
             <key code="78" output="-"/>
             <key code="79" output="&#x0010;"/>
             <key code="80" output="&#x0010;"/>
-            <key code="81" output="="/>
+            <key code="81" output="&#x200D;"/>
             <key code="82" output="०"/>
             <key code="83" output="१"/>
             <key code="84" output="२"/>
