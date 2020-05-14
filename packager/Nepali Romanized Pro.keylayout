@@ -301,7 +301,7 @@ Based on the Nepali Romanized Keyboard layout by MPP-->
             <key code="41" output=";"/>
             <key code="42" output="ॐ"/>
             <key code="43" output=","/>
-            <key code="44" output=" ्"/>
+            <key code="44" output="्"/>
             <key code="45" output="न"/>
             <key code="46" output="म"/>
             <key code="47" output="॰"/>
