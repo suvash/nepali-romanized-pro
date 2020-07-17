@@ -4,6 +4,12 @@
         <strings language="en">
 <![CDATA[
 "NRP_TITLE" = "Nepali Romanized Pro";
+"NRP_OLD_DETECT" = "An older version detected";
+"NRP_OLD_DETECT_MSG" = "An older version of the keyboard layout already exists. This installer cannot continue.
+
+Please manually delete :
+- /Library/Keyboard Layouts/Nepali Romanized Pro.icns
+- /Library/Keyboard Layouts/Nepali Romanized Pro.keylayout";
 "NRP_PREV_DETECT" = "Previous installation detected";
 "NRP_PREV_DETECT_MSG" = "A previous installation of the keyboard layout already exists. This installer will overwrite it.";
 ]]>
@@ -26,6 +32,12 @@
 <![CDATA[
 function pre_install_check() {
   if(system.files.fileExistsAtPath('/Library/Keyboard Layouts/Nepali Romanized Pro.keylayout')) {
+      my.result.title = system.localizedString('NRP_OLD_DETECT');
+      my.result.message = system.localizedString('NRP_OLD_DETECT_MSG');
+      my.result.type = 'Fatal';
+      return false;
+  }
+  if(system.files.fileExistsAtPath('/Library/Keyboard Layouts/np-rom-pro.keylayout')) {
       my.result.title = system.localizedString('NRP_PREV_DETECT');
       my.result.message = system.localizedString('NRP_PREV_DETECT_MSG');
       my.result.type = 'Warning';
