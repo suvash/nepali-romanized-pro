@@ -1,23 +1,19 @@
 .DEFAULT_GOAL=help
-SHELL=/usr/bin/env bash
+SHELL:=/usr/bin/env bash
 
-export APP_ORG=com.thapaliya
-$(info -- APP_ORG is set to $(APP_ORG))
+APP_ORG:=com.thapaliya
+APP_ID:=nepali-romanized
+APP_PKG:=install
 
-export APP_ID=nepali-romanized
-$(info -- APP_ID is set to $(APP_ID))
-
-export APP_PKG=install
-$(info -- APP_PKG is set to $(APP_PKG))
-
-export APP_PKG_ID=$(APP_ORG).$(APP_ID).$(APP_PKG)
+APP_PKG_ID:=$(APP_ORG).$(APP_ID).$(APP_PKG)
 $(info -- APP_PKG_ID is set to $(APP_PKG_ID))
 
-export APP_VERSION=0.0.1
+# Remember to bump the version in Info.plist as well
+APP_VERSION:=4.0
 $(info -- APP_VERSION is set to $(APP_VERSION))
 
-export BUILD_DIR=build
-$(info -- BUILD_DIR is set to $(BUILD_DIR))
+BUILD_DIR:=build
+BUILD_TIMESTAMP:=$(shell TZ=Asia/Katmandu date)
 
 $(info -- )
 
@@ -48,7 +44,9 @@ build-product:
 	$(info -- Preparing installation product directory)
 	mkdir -p $(BUILD_DIR)/product/
 	cp -Rv productdeps $(BUILD_DIR)/_productdeps
-	sed -i '' -e 's/__APP_PKG_ID__/'$(APP_PKG_ID)'/g' $(BUILD_DIR)/_productdeps/distribution.xml
+	sed -i '' -e 's/__APP_VERSION__/$(APP_VERSION)/g' $(BUILD_DIR)/_productdeps/distribution.xml
+	sed -i '' -e 's/__BUILD_TIMESTAMP__/$(BUILD_TIMESTAMP)/g' $(BUILD_DIR)/_productdeps/distribution.xml
+	sed -i '' -e 's/__APP_PKG_ID__/$(APP_PKG_ID)/g' $(BUILD_DIR)/_productdeps/distribution.xml
 	$(info -- Building installation product)
 	productbuild --distribution $(BUILD_DIR)/_productdeps/distribution.xml \
 	--resources $(BUILD_DIR)/_productdeps/Resources \

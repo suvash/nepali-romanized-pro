@@ -20,9 +20,9 @@
     <options customize="never" allow-external-scripts="no" rootVolumeOnly="true"/>
 
     <welcome language="en" mime-type="text/html"><![CDATA[<html><body><br />
-<p style="margin: 0px; font: 14px 'Helvetica'">This installer will guide you through the process of installing the 'Nepali Romanized Pro' keyboard layout in your operating system.<br></br>You will need to log out, then log back in to use the layouts.</p></body></html>]]></welcome>
+<p style="margin: 0px; font: 14px 'Helvetica'">This installer will guide you through the process of installing the 'Nepali Romanized Pro' keyboard layout in your operating system.<br /><br />You will need to log out, then log back in to use the layouts.<br /><br />Version : __APP_VERSION__<br />Built on : __BUILD_TIMESTAMP__</p></body></html>]]></welcome>
     <conclusion language="en" mime-type="text/html"><![CDATA[<html><body><br />
-<p style="margin: 0px; font: 14px 'Helvetica'">'Nepali Romanized Pro' keyboard layout is now installed.<br></br>Please log out first, then log back in and visit the Keyboard Layouts panel in your System Preferences to see the newly installed layout.</p></body></html>]]></conclusion>
+<p style="margin: 0px; font: 14px 'Helvetica'">'Nepali Romanized Pro' keyboard layout is now installed.<br /><br />Please log out first, then log back in again.<br />Afterwards, visit the Keyboard Layouts panel in your System Preferences to see the newly installed layout.</p></body></html>]]></conclusion>
     <installation-check script="pre_install_check();"/>
     <script>
 <![CDATA[
