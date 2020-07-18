@@ -17,7 +17,7 @@ BUILD_TIMESTAMP:=$(shell TZ=Asia/Katmandu date)
 
 $(info -- )
 
-.PHONY: help clean
+.PHONY: help clean buil build-install-package build-productd
 
 help:  ## Display this help
 	@awk 'BEGIN {FS = ":.*##"; printf "\nUsage:\n  make \033[36m\033[0m\n\nTargets:\n"} /^[a-zA-Z_-]+:.*?##/ { printf "  \033[36m%-10s\033[0m %s\n", $$1, $$2 }' $(MAKEFILE_LIST)
@@ -26,7 +26,7 @@ clean:  ## Clean build directory
 	$(info -- Cleaning build directory)
 	rm -rf $(BUILD_DIR)
 
-build: clean build-install-package build-product
+build: clean build-install-package build-product ## Build the final product
 
 build-install-package:
 	$(info -- Preparing installation package directory)
@@ -52,3 +52,22 @@ build-product:
 	--resources $(BUILD_DIR)/_productdeps/Resources \
 	--package-path $(BUILD_DIR)/package \
 	$(BUILD_DIR)/product/$(APP_ID)-$(APP_VERSION).pkg
+
+icon: ## Build the icns from the input PNG file
+	$(info -- Building icns file from original png)
+	mkdir -p /tmp/np-icon-tmpdir.iconset
+	cp assets/original/ne.png /tmp/np-icon-tmpdir.iconset/icon.png
+	sips -z 16 16     /tmp/np-icon-tmpdir.iconset/icon.png --out /tmp/np-icon-tmpdir.iconset/icon_16x16.png
+	sips -z 32 32     /tmp/np-icon-tmpdir.iconset/icon.png --out /tmp/np-icon-tmpdir.iconset/icon_16x16@2x.png
+	sips -z 32 32     /tmp/np-icon-tmpdir.iconset/icon.png --out /tmp/np-icon-tmpdir.iconset/icon_32x32.png
+	sips -z 64 64     /tmp/np-icon-tmpdir.iconset/icon.png --out /tmp/np-icon-tmpdir.iconset/icon_32x32@2x.png
+	sips -z 128 128   /tmp/np-icon-tmpdir.iconset/icon.png --out /tmp/np-icon-tmpdir.iconset/icon_128x128.png
+	sips -z 256 256   /tmp/np-icon-tmpdir.iconset/icon.png --out /tmp/np-icon-tmpdir.iconset/icon_128x128@2x.png
+	sips -z 256 256   /tmp/np-icon-tmpdir.iconset/icon.png --out /tmp/np-icon-tmpdir.iconset/icon_256x256.png
+	sips -z 512 512   /tmp/np-icon-tmpdir.iconset/icon.png --out /tmp/np-icon-tmpdir.iconset/icon_256x256@2x.png
+	sips -z 512 512   /tmp/np-icon-tmpdir.iconset/icon.png --out /tmp/np-icon-tmpdir.iconset/icon_512x512.png
+	cp /tmp/np-icon-tmpdir.iconset/icon.png /tmp/np-icon-tmpdir.iconset/icon_512x512@2x.png
+	rm /tmp/np-icon-tmpdir.iconset/icon.png
+	iconutil -c icns /tmp/np-icon-tmpdir.iconset
+	mv /tmp/np-icon-tmpdir.icns assets/ne.icns
+	rm -rf /tmp/np-icon-tmpdir.iconset
