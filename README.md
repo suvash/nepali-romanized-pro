@@ -1,57 +1,53 @@
-# Nepali Romanized Pro (Unicode) for OSX
+# Nepali Romanized Pro (Unicode) for macOS
 
 
-This is a package that installs Unicode Nepali Romanized Keyboard Layout on a Mac OSX machine. Since the Keyboard Layout that comes with OSX is pretty much limited and of Traditional type, this is supposed to be a replacement for a much better experience. As easy as 3 steps.
+This is a package that installs Unicode Nepali Romanized Keyboard Layout on a macOS machine. Since the Keyboard Layout that comes with macOS is limited, this is intended to be a replacement for a better experience.
 
 This keyboard layout is based on the Nepali Unicode Romanized layout by Madan Puraskar Pustakalaya.
 
 
 ## Installation
 
-Download the [latest version here](https://sourceforge.net/projects/nepaliromanizedpro-osx/files/latest/download), unzip it and run the installer. You have to log out before being able to use the Keyboard Layout.
-![Installer](https://github.com/suvash/nepali-romanized-pro/raw/master/images/readme/installer.png)
+The package is not signed yet, so you will have to right-click open, and allow the package to run.
+
+
+- Download the latest version [from releases](https://github.com/suvash/nepali-romanized-pro/releases).
+- Right-click on the package, choose 'Open'. Read the warning and continue to open the package instead of moving it to the bin. The package will be signed in a future release to solve this issue.
+
+You have to log out, and the log back in before being able to use the Keyboard Layout.
+![Installer](https://github.com/suvash/nepali-romanized-pro/raw/master/images/installer.png)
 
 
 ## Usage
 
 After logging out and back in again (this is necessary else it won't work.), follow as below.
 
-###Mavericks (10.9)
-Open "Language & Region" in the System Preferences
-![System Preferences](https://github.com/suvash/nepali-romanized-pro/raw/master/images/readme/mavericks_system_prefs.png)
+Open System Preferences, and select the Keyboard preferences
+![System Preferences](https://github.com/suvash/nepali-romanized-pro/raw/master/images/01-system-preferences.png)
 
-Select "Keyboard Preferences" at the bottoms of the pane
-![Keyboard Preferences](https://github.com/suvash/nepali-romanized-pro/raw/master/images/readme/mavericks_keyboard_preferences.png)
+In the "Input Sources" tab, enable the "Show input in menu bar". Press the [+] button at the bottom left, and find the newly installed layout in the 'Nepali' section.
+![Layouts - Input Sources](https://github.com/suvash/nepali-romanized-pro/raw/master/images/02-keyboard-input-sources.png)
+![Nepali - Input Sources](https://github.com/suvash/nepali-romanized-pro/raw/master/images/03-nepali-romanized-pro.png)
 
-In the "Input Source" tab, add a source and search "Nepali" amongst 'Others' to find this layout. Make sure you also enable the "Show input in menu bar"
-![Input Sources](https://github.com/suvash/nepali-romanized-pro/raw/master/images/readme/mavericks_input_sources.png)
-![Input Sources](https://github.com/suvash/nepali-romanized-pro/raw/master/images/readme/mavericks_nepali_others.png)
+Optionaly, setup a keyboard shorcut to switch between the layouts easily.
+![Shorcut - Input sources](https://github.com/suvash/nepali-romanized-pro/raw/master/images/04-shortcuts-input-sources.png)
 
-On the menubar, select the keyboard layout you want to use.
-![Keyboard Select](https://github.com/suvash/nepali-romanized-pro/raw/master/images/readme/keyboard-select.png)
+Finally, select the keyboard layout you want to use on the menubar, or use the shorcut.
+![Keyboard Select](https://github.com/suvash/nepali-romanized-pro/raw/master/images/keyboard-select.png)
 
-### Mountain Lion (10.8) and older
-Open "Language & Text" in the System Preferences (under similar name in older version of OSX)
-![System Preferences](https://github.com/suvash/nepali-romanized-pro/raw/master/images/readme/lion_system_prefs.png)
 
-In the "Input Source" tab, scroll down to find "Nepali Romanized Pro". Enable it. Make sure you also enable the "Show input in menu bar"
-![Input Sources](https://github.com/suvash/nepali-romanized-pro/raw/master/images/readme/lion_input_sources.png)
-
-On the menubar, select the keyboard layout you want to use.
-![Keyboard Select](https://github.com/suvash/nepali-romanized-pro/raw/master/images/readme/keyboard-select.png)
-
-### That's it. You're all set to using Nepali on your machine.
+### That's it. You're all set to using 'Nepali (Romanized) - Pro' layout on your machine.
 
 ## Keyboard Layouts
 
 ### Nepali Mode ( Normal, Shift and Caps Lock Mode )
-![Normal](https://github.com/suvash/nepali-romanized-pro/raw/master/images/readme/layout_nepali.png)
+![Normal](https://github.com/suvash/nepali-romanized-pro/raw/master/images/layout_nepali.png)
 
 ### Quick English mode ( Command, Option and Option+Shift Mode)
-![Shift Pressed](https://github.com/suvash/nepali-romanized-pro/raw/master/images/readme/layout_english.png)
+![Shift Pressed](https://github.com/suvash/nepali-romanized-pro/raw/master/images/layout_english.png)
 
-Download [the pdf here](https://github.com/suvash/nepali-romanized-pro/raw/master/images/readme/layout.pdf) if needed.
+Download [the pdf here](https://github.com/suvash/nepali-romanized-pro/raw/master/images/layout.pdf) if needed.
 
-##Suggestions are always welcome.
+## Suggestions are always welcome.
 
-Feel free to send me one by [opening an issue here](https://github.com/suvash/nepali-romanized-pro/issues) or in [the Facebook Page](https://www.facebook.com/pages/Nepali-Romanized-Pro-for-OSX/424938580892062)
+Feel free to send me one by [opening an issue here](https://github.com/suvash/nepali-romanized-pro/issues)
