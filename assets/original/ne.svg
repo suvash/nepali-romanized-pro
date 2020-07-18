@@ -11,9 +11,12 @@
    inkscape:version="1.0 (4035a4f, 2020-05-01)"
    id="svg875"
    version="1.1"
-   viewBox="0 0 135.46666 135.46666"
-   height="512"
-   width="512">
+   viewBox="0 0 541.86664 541.86664"
+   height="2048"
+   width="2048"
+   inkscape:export-filename="/Users/suvash/Projects/nepali-romanized-pro/assets/original/ne.png"
+   inkscape:export-xdpi="112.5"
+   inkscape:export-ydpi="112.5">
   <defs
      id="defs869" />
   <sodipodi:namedview
@@ -27,8 +30,8 @@
      inkscape:document-rotation="0"
      inkscape:current-layer="layer2"
      inkscape:document-units="px"
-     inkscape:cy="560"
-     inkscape:cx="265.71429"
+     inkscape:cy="1017.1429"
+     inkscape:cx="807.51831"
      inkscape:zoom="0.35"
      inkscape:pageshadow="2"
      inkscape:pageopacity="0.0"
@@ -44,7 +47,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -53,21 +56,22 @@
      inkscape:groupmode="layer"
      inkscape:label="bottom">
     <rect
-       y="3.999809"
-       x="3.9998107"
-       height="127.46704"
-       width="127.46704"
+       y="15.999235"
+       x="15.999237"
+       height="509.86816"
+       width="509.86816"
        id="rect1438"
-       style="fill:#cc0f23;stroke:#003591;stroke-width:7.99962;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none" />
+       style="fill:#cc0f23;stroke:#003591;stroke-width:31.9985;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;opacity:1" />
   </g>
   <g
      inkscape:label="ne"
      id="layer2"
      inkscape:groupmode="layer">
     <g
-       style="font-style:normal;font-weight:normal;font-size:101.6px;line-height:1.25;font-family:sans-serif;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.529166"
+       style="font-style:normal;font-weight:normal;font-size:101.6px;line-height:1.25;font-family:sans-serif;opacity:0.97;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.529166"
        id="text1480"
-       aria-label="ने">
+       aria-label="ने"
+       transform="matrix(4.535881,0,0,4.535881,-21.988437,-25.690901)">
       <path
          id="path1486"
          style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:101.6px;font-family:Courier;-inkscape-font-specification:'Courier, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#ffffff;stroke-width:0.529166"

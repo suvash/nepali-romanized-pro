@@ -61,12 +61,15 @@ icon: ## Build the icns from the input PNG file
 	sips -z 32 32     /tmp/np-icon-tmpdir.iconset/icon.png --out /tmp/np-icon-tmpdir.iconset/icon_16x16@2x.png
 	sips -z 32 32     /tmp/np-icon-tmpdir.iconset/icon.png --out /tmp/np-icon-tmpdir.iconset/icon_32x32.png
 	sips -z 64 64     /tmp/np-icon-tmpdir.iconset/icon.png --out /tmp/np-icon-tmpdir.iconset/icon_32x32@2x.png
+	sips -z 64 64     /tmp/np-icon-tmpdir.iconset/icon.png --out /tmp/np-icon-tmpdir.iconset/icon_64x64.png
+	sips -z 128 128   /tmp/np-icon-tmpdir.iconset/icon.png --out /tmp/np-icon-tmpdir.iconset/icon_64x64@2x.png
 	sips -z 128 128   /tmp/np-icon-tmpdir.iconset/icon.png --out /tmp/np-icon-tmpdir.iconset/icon_128x128.png
 	sips -z 256 256   /tmp/np-icon-tmpdir.iconset/icon.png --out /tmp/np-icon-tmpdir.iconset/icon_128x128@2x.png
 	sips -z 256 256   /tmp/np-icon-tmpdir.iconset/icon.png --out /tmp/np-icon-tmpdir.iconset/icon_256x256.png
 	sips -z 512 512   /tmp/np-icon-tmpdir.iconset/icon.png --out /tmp/np-icon-tmpdir.iconset/icon_256x256@2x.png
 	sips -z 512 512   /tmp/np-icon-tmpdir.iconset/icon.png --out /tmp/np-icon-tmpdir.iconset/icon_512x512.png
-	cp /tmp/np-icon-tmpdir.iconset/icon.png /tmp/np-icon-tmpdir.iconset/icon_512x512@2x.png
+	sips -z 1024 1024 /tmp/np-icon-tmpdir.iconset/icon.png --out /tmp/np-icon-tmpdir.iconset/icon_512x512@2x.png
+	sips -z 1024 1024 /tmp/np-icon-tmpdir.iconset/icon.png --out /tmp/np-icon-tmpdir.iconset/icon_1024x1024.png
 	rm /tmp/np-icon-tmpdir.iconset/icon.png
 	iconutil -c icns /tmp/np-icon-tmpdir.iconset
 	mv /tmp/np-icon-tmpdir.icns assets/ne.icns
