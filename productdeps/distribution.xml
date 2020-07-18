@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<installer-script minSpecVersion="1.000000">
+    <localization>
+        <strings language="en">
+<![CDATA[
+"NR_TITLE" = "Nepali Romanized Pro";
+"NR_OLD_DETECT" = "An older version detected";
+"NR_OLD_DETECT_MSG" = "An older version of the keyboard layout already exists. This installer will purge it and install new bundle.";
+"NR_PREV_DETECT" = "Previous installation detected";
+"NR_PREV_DETECT_MSG" = "A previous installation of the keyboard layout bundle already exists. This installer will overwrite it.";
+]]>
+        </strings>
+    </localization>
+    <allowed-os-versions>
+        <os-version min="10.10"/>
+    </allowed-os-versions>
+    <title>NR_TITLE</title>
+    <background mime-type="image/png" file="background.png" alignment="bottomleft" scaling="none"/>
+    <background-darkAqua mime-type="image/png" file="background.png" alignment="bottomleft" scaling="none"/>
+    <options customize="never" allow-external-scripts="no" rootVolumeOnly="true"/>
+
+    <welcome language="en" mime-type="text/html"><![CDATA[<html><body><br />
+<p style="margin: 0px; font: 14px 'Helvetica'">This installer will guide you through the process of installing the 'Nepali Romanized Pro' keyboard layout in your operating system.<br /><br />You will need to log out, then log back in to use the layouts.<br /><br />Version : __APP_VERSION__<br />Built on : __BUILD_TIMESTAMP__</p></body></html>]]></welcome>
+    <conclusion language="en" mime-type="text/html"><![CDATA[<html><body><br />
+<p style="margin: 0px; font: 14px 'Helvetica'">'Nepali Romanized Pro' keyboard layout is now installed.<br /><br />Please log out first, then log back in again.<br />Afterwards, visit the Keyboard Layouts panel in your System Preferences to see the newly installed layout.</p></body></html>]]></conclusion>
+    <installation-check script="pre_install_check();"/>
+    <script>
+<![CDATA[
+function pre_install_check() {
+  if(system.files.fileExistsAtPath('/Library/Keyboard Layouts/Nepali Romanized Pro.keylayout')) {
+      my.result.title = system.localizedString('NR_OLD_DETECT');
+      my.result.message = system.localizedString('NR_OLD_DETECT_MSG');
+      my.result.type = 'Warning';
+      return false;
+  }
+  if(system.files.fileExistsAtPath('/Library/Keyboard Layouts/nepali-romanized.bundle')) {
+      my.result.title = system.localizedString('NR_PREV_DETECT');
+      my.result.message = system.localizedString('NR_PREV_DETECT_MSG');
+      my.result.type = 'Warning';
+      return false;
+  }
+  return true;
+}
+]]>
+    </script>
+
+    <choices-outline>
+        <line choice="install"/>
+    </choices-outline>
+    <choice id="install" title="Nepali Romanized Pro">
+        <pkg-ref id="__APP_PKG_ID__"/>
+    </choice>
+    <pkg-ref id="__APP_PKG_ID__" auth="Root">__APP_PKG_ID__.pkg</pkg-ref>
+    <!-- onConclusion="RequireLogout" -->
+</installer-script>

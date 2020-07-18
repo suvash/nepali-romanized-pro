@@ -1,13 +1,12 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE keyboard PUBLIC "" "file://localhost/System/Library/DTDs/KeyboardLayout.dtd">
+<?xml version="1.1" encoding="UTF-8"?>
+<!DOCTYPE keyboard SYSTEM "file://localhost/System/Library/DTDs/KeyboardLayout.dtd">
 <!--Created by Ukelele version 2.2.6 on 2014-01-07 at 19:20 (GMT+1)-->
-<!--Last edited by Ukelele version 2.2.7 on 2014-01-23 at 19:34 (GMT+1)-->
-<!--Last edited by Jwalanta Shrestha on 2014-08-04-->
-<!--﻿Author: Suvash Thapaliya
-Based on the Nepali Romanized Keyboard layout by MPP-->
-<keyboard group="126" id="-11464" name="Nepali Romanized Pro" maxout="3">
+<!--Author: Suvash Thapaliya-->
+<!--Based on the Nepali Romanized Keyboard layout by MPP-->
+<!--Last edited by Ukelele version 3.4.2.314 on 2020-07-18 at 01:28 (GMT+2)-->
+<keyboard group="126" id="-6758" name="Nepali (Romanized) - Pro" maxout="3">
     <layouts>
-        <layout first="0" last="0" modifiers="30" mapSet="a8"/>
+        <layout first="0" last="0" mapSet="a8" modifiers="30"/>
     </layouts>
     <modifierMap id="30" defaultIndex="6">
         <keyMapSelect mapIndex="0">
