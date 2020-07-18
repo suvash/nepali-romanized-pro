@@ -1,0 +1,12 @@
+#!/bin/sh
+
+log_post() {
+    TIMESTAMP=`date -u +"%Y-%m-%dT%H:%M:%SZ"`
+    echo "[$TIMESTAMP] - $1" >> /tmp/nepali-romanized-postinstall.log
+}
+
+log_post "Starting postinstall"
+
+log_post "Finished postinstall"
+
+exit 0

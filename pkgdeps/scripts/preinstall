@@ -1,0 +1,32 @@
+#!/bin/sh
+
+log_pre() {
+    TIMESTAMP=`date -u +"%Y-%m-%dT%H:%M:%SZ"`
+    echo "[$TIMESTAMP] - $1" >> /tmp/nepali-romanized-preinstall.log
+}
+
+log_pre "Starting preinstall"
+
+if [ -f "/Library/Keyboard Layouts/Nepali Romanized Pro.keylayout" ]
+then
+    log_pre "Keyboard layout Nepali Romanized Pro.keylayout is already installed."
+    log_pre "Purging Nepali Romanized Pro.keylayout"
+
+    rm "/Library/Keyboard Layouts/Nepali Romanized Pro.icns" "/Library/Keyboard Layouts/Nepali Romanized Pro.keylayout"
+else
+    log_pre "Nepali Romanized Pro.keylayout has not yet been installed."
+fi
+
+if [ -d "/Library/Keyboard Layouts/nepali-romanized.bundle/" ]
+then
+    log_pre "Keyboard layout bundle nepali-romanized.bundle is already installed."
+    log_pre "Purging nepali-romanized.bundle."
+
+    rm -rf "/Library/Keyboard Layouts/nepali-romanized.bundle/"
+else
+    log_pre "nepali-romanized.bundle has not yet been installed."
+fi
+
+log_pre "Finished preinstall"
+
+exit 0

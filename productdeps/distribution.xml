@@ -3,22 +3,18 @@
     <localization>
         <strings language="en">
 <![CDATA[
-"NRP_TITLE" = "Nepali Romanized Pro";
-"NRP_OLD_DETECT" = "An older version detected";
-"NRP_OLD_DETECT_MSG" = "An older version of the keyboard layout already exists. This installer cannot continue.
-
-Please manually delete :
-- /Library/Keyboard Layouts/Nepali Romanized Pro.icns
-- /Library/Keyboard Layouts/Nepali Romanized Pro.keylayout";
-"NRP_PREV_DETECT" = "Previous installation detected";
-"NRP_PREV_DETECT_MSG" = "A previous installation of the keyboard layout already exists. This installer will overwrite it.";
+"NR_TITLE" = "Nepali Romanized Pro";
+"NR_OLD_DETECT" = "An older version detected";
+"NR_OLD_DETECT_MSG" = "An older version of the keyboard layout already exists. This installer will purge it and install new bundle.";
+"NR_PREV_DETECT" = "Previous installation detected";
+"NR_PREV_DETECT_MSG" = "A previous installation of the keyboard layout bundle already exists. This installer will overwrite it.";
 ]]>
         </strings>
     </localization>
     <allowed-os-versions>
         <os-version min="10.10"/>
     </allowed-os-versions>
-    <title>NRP_TITLE</title>
+    <title>NR_TITLE</title>
     <background mime-type="image/png" file="background.png" alignment="bottomleft" scaling="none"/>
     <background-darkAqua mime-type="image/png" file="background.png" alignment="bottomleft" scaling="none"/>
     <options customize="never" allow-external-scripts="no" rootVolumeOnly="true"/>
@@ -32,14 +28,14 @@ Please manually delete :
 <![CDATA[
 function pre_install_check() {
   if(system.files.fileExistsAtPath('/Library/Keyboard Layouts/Nepali Romanized Pro.keylayout')) {
-      my.result.title = system.localizedString('NRP_OLD_DETECT');
-      my.result.message = system.localizedString('NRP_OLD_DETECT_MSG');
-      my.result.type = 'Fatal';
+      my.result.title = system.localizedString('NR_OLD_DETECT');
+      my.result.message = system.localizedString('NR_OLD_DETECT_MSG');
+      my.result.type = 'Warning';
       return false;
   }
-  if(system.files.fileExistsAtPath('/Library/Keyboard Layouts/np-rom-pro.keylayout')) {
-      my.result.title = system.localizedString('NRP_PREV_DETECT');
-      my.result.message = system.localizedString('NRP_PREV_DETECT_MSG');
+  if(system.files.fileExistsAtPath('/Library/Keyboard Layouts/nepali-romanized.bundle')) {
+      my.result.title = system.localizedString('NR_PREV_DETECT');
+      my.result.message = system.localizedString('NR_PREV_DETECT_MSG');
       my.result.type = 'Warning';
       return false;
   }

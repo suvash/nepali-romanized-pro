@@ -4,7 +4,7 @@ SHELL=/usr/bin/env bash
 export APP_ORG=com.thapaliya
 $(info -- APP_ORG is set to $(APP_ORG))
 
-export APP_ID=nepali-romanized-pro
+export APP_ID=nepali-romanized
 $(info -- APP_ID is set to $(APP_ID))
 
 export APP_PKG=install
@@ -35,22 +35,22 @@ build: clean build-install-package build-product
 build-install-package:
 	$(info -- Preparing installation package directory)
 	mkdir -p $(BUILD_DIR)/installpkgroot/Library/Keyboard\ Layouts/
-	cp -a lib/*.keylayout $(BUILD_DIR)/installpkgroot/Library/Keyboard\ Layouts/
-	cp -a lib/*.icns $(BUILD_DIR)/installpkgroot/Library/Keyboard\ Layouts/
+	cp -aR lib/$(APP_ID).bundle $(BUILD_DIR)/installpkgroot/Library/Keyboard\ Layouts/
 	$(info -- Building installation package)
 	mkdir -p $(BUILD_DIR)/package/
 	pkgbuild --identifier $(APP_PKG_ID) \
 	--version $(APP_VERSION) \
 	--root $(BUILD_DIR)/installpkgroot \
+	--scripts pkgdeps/scripts \
 	$(BUILD_DIR)/package/$(APP_PKG_ID).pkg
 
 build-product:
 	$(info -- Preparing installation product directory)
 	mkdir -p $(BUILD_DIR)/product/
-	cp -Rv darwin $(BUILD_DIR)/_darwin
-	sed -i '' -e 's/__APP_PKG_ID__/'$(APP_PKG_ID)'/g' $(BUILD_DIR)/_darwin/distribution.xml
+	cp -Rv productdeps $(BUILD_DIR)/_productdeps
+	sed -i '' -e 's/__APP_PKG_ID__/'$(APP_PKG_ID)'/g' $(BUILD_DIR)/_productdeps/distribution.xml
 	$(info -- Building installation product)
-	productbuild --distribution $(BUILD_DIR)/_darwin/distribution.xml \
-	--resources $(BUILD_DIR)/_darwin/Resources \
+	productbuild --distribution $(BUILD_DIR)/_productdeps/distribution.xml \
+	--resources $(BUILD_DIR)/_productdeps/Resources \
 	--package-path $(BUILD_DIR)/package \
 	$(BUILD_DIR)/product/$(APP_ID)-$(APP_VERSION).pkg
